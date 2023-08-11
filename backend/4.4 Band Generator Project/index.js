@@ -17,8 +17,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.get("/", (req, res) => {
-  //Step 1 - Make the get route work and render the index.ejs file.
-  res.render("index.ejs");
+  //Step 1 - Make the get route work and render the list.ejs file.
+  res.render("list.ejs");
 });
 
 app.post("/submit", (req, res) => {
@@ -26,7 +26,7 @@ app.post("/submit", (req, res) => {
   const randomAdj = adj[Math.floor(Math.random() * adj.length)];
   const randomNoun =  noun[Math.floor(Math.random() * noun.length)];
 
-  res.render("index.ejs", {
+  res.render("list.ejs", {
     adjective: randomAdj,
     noun: randomNoun
   })

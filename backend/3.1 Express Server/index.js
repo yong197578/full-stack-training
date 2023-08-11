@@ -9,7 +9,7 @@ app.get("/",  req, res =>{
 app.listen(port, ()=>{
     console.log(`Server running on port ${port}`);
 })
-//start server = node index.js
+//start server = node app.js
 //sudo -i -P -n | grep LISTEN
 //HTTP request
 //get -request resources to the server(get something)

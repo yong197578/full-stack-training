@@ -2,7 +2,7 @@ import express from "express";
 
 const app = express();
 const port = 3000;
-//nodemon index.js - it will automatically restart server
+//nodemon app.js - it will automatically restart server
 app.get("/", (req, res) =>{
     // console.log(req.rawHeaders);
     res.send("<h1>Home Page - Welcome</h1>");

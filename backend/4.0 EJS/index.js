@@ -16,7 +16,7 @@ app.get("/", (req, res) =>{
         adv = "it's time to have fun"
     }
 
-    res.render("index.ejs", {
+    res.render("list.ejs", {
         dayType: "a Weekday",
         advice: "it's time to work hard",
     })

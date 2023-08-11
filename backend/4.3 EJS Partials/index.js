@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 /* Write your code here:
-Step 1: Render the home page "/" index.ejs
+Step 1: Render the home page "/" list.ejs
 
 Step 2: Make sure that static files are linked to and the CSS shows up.
 Step 3: Add the routes to handle the render of the about and contact pages.
@@ -13,7 +13,7 @@ Step 4: Add the partials to the about and contact pages to show the header and f
 
 app.use(express.static("public"));
 app.get("/", (req, res)=>{
-  res.render("index.ejs");
+  res.render("list.ejs");
 })
 
 app.get("/about", (req, res)=>{
